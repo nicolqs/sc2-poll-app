@@ -36,7 +36,9 @@ const PollGame: React.FC = () => {
 
   return (
     <div className="p-4 max-w-md mx-auto bg-white shadow-md rounded-lg">
-      <h2 className="text-xl font-semibold mb-4">{currentQuestion.question}</h2>
+      <h2 className="text-xl font-semibold mb-4 dark:text-black">
+        {currentQuestion.question}
+      </h2>
       <div className="space-y-2">
         {currentQuestion.answers.map((answer, index) => (
           <button
